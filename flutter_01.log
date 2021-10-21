@@ -1,0 +1,85 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --quiet assemble --no-version-check --depfile D:\Coding Projects\Mobile Apps\Music Player\musicplayer\build\app\intermediates\flutter\debug/flutter_build.d --output D:\Coding Projects\Mobile Apps\Music Player\musicplayer\build\app\intermediates\flutter\debug -dTargetFile=D:\Coding Projects\Mobile Apps\Music Player\musicplayer\lib\main.dart -dTargetPlatform=android -dBuildMode=debug -dTrackWidgetCreation=true --DartDefines=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== --ExtraFrontEndOptions=--no-sound-null-safety debug_android_application
+
+## exception
+
+FileSystemException: FileSystemException: Cannot delete file, path = 'D:\Coding Projects\Mobile Apps\Music Player\musicplayer\build\app\intermediates\flutter\debug\flutter_assets\assets/music/FalseConfidence.mp3' (OS Error: Access is denied.
+, errno = 5)
+
+```
+#0      _File.throwIfError (dart:io/file_impl.dart:635:7)
+#1      _File._deleteSync (dart:io/file_impl.dart:298:5)
+#2      FileSystemEntity.deleteSync (dart:io/file_system_entity.dart:408:7)
+#3      ForwardingFileSystemEntity.deleteSync (package:file/src/forwarding/forwarding_file_system_entity.dart:70:16)
+#4      ForwardingFileSystemEntity.deleteSync (package:file/src/forwarding/forwarding_file_system_entity.dart:70:16)
+#5      ErrorHandlingFileSystem.deleteIfExists (package:flutter_tools/src/base/error_handling_io.dart:82:12)
+#6      FlutterBuildSystem.trackSharedBuildDirectory (package:flutter_tools/src/build_system/build_system.dart:731:33)
+#7      FlutterBuildSystem.build (package:flutter_tools/src/build_system/build_system.dart:619:5)
+<asynchronous suspension>
+#8      AssembleCommand.runCommand (package:flutter_tools/src/commands/assemble.dart:318:32)
+<asynchronous suspension>
+#9      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1043:27)
+<asynchronous suspension>
+#10     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#11     CommandRunner.runCommand (package:args/command_runner.dart:196:13)
+<asynchronous suspension>
+#12     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:284:9)
+<asynchronous suspension>
+#13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#14     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:232:5)
+<asynchronous suspension>
+#15     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:62:9)
+<asynchronous suspension>
+#16     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#17     main (package:flutter_tools/executable.dart:91:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.2.3, on Microsoft Windows [Version 10.0.18363.1556], locale en-US)
+    • Flutter version 2.2.3 at D:\Mobile Dev Environment\Flutter
+    • Framework revision f4abaa0735 (5 weeks ago), 2021-07-01 12:46:11 -0700
+    • Engine revision 241c87ad80
+    • Dart version 2.13.4
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 30.0.0)
+    • Android SDK at C:\Users\1babi\AppData\Local\Android\Sdk
+    • Platform android-30, build-tools 30.0.0
+    • ANDROID_HOME = C:\Users\1babi\AppData\Local\Android\Sdk
+    • Java binary at: D:\Mobile Dev Environment\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Visual Studio - develop for Windows (Visual Studio Community 2019 16.10.2)
+    • Visual Studio at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community
+    • Visual Studio Community 2019 version 16.10.31410.357
+    • Windows 10 SDK version 10.0.19041.0
+
+[✓] Android Studio (version 4.1.0)
+    • Android Studio at D:\Mobile Dev Environment\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+
+[✓] Connected device (4 available)
+    • SM G973F (mobile) • RF8M328SWBZ • android-arm64  • Android 11 (API 30)
+    • Windows (desktop) • windows     • windows-x64    • Microsoft Windows [Version 10.0.18363.1556]
+    • Chrome (web)      • chrome      • web-javascript • Google Chrome 91.0.4472.124
+    • Edge (web)        • edge        • web-javascript • Microsoft Edge 92.0.902.62
+
+• No issues found!
+```

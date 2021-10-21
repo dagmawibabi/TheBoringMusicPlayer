@@ -1,0 +1,10 @@
+Add the following list of songs to this folder in order to make the app work
+
+Daylight.mp3
+EastSide.mp3
+FalseConfidence.mp3
+GiveonAlecia.mp3
+HeartBreakAnniversary.mp3
+Ocean.mp3
+RiverOfTears.mp3
+ToDieFor.mp3
