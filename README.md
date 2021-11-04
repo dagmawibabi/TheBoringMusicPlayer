@@ -1,4 +1,4 @@
-# musicplayer
+[![The Boring Music Player, A minimal but aesthetic music player! 😊](https://pimp-my-readme.webapp.io/pimp-my-readme/wavy-banner?subtitle=A%20minimal%20but%20aesthetic%20music%20player%21%20%F0%9F%98%8A&title=The%20Boring%20Music%20Player)](https://pimp-my-readme.webapp.io)
 
 A new Flutter project.
 
